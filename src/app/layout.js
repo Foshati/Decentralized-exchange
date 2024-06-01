@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { useEvmNativeBalance } from '@moralisweb3/next';
 
 const inter = Inter({ subsets: ["latin"] });
 

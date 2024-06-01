@@ -11,6 +11,7 @@ export default function Swap() {
   const [tokenOne, setTokenOne] = useState(tokenList[0]);
   const [tokenTwo, setTokenTwo] = useState(tokenList[2]);
   const [changeToken, setChangeToken] = useState(1);
+  const [prices, setPrices] = useState(null);
 
   function changeAmount(e) {
     setTokenOneAmount(e.target.value);
@@ -159,6 +160,9 @@ export default function Swap() {
                 <span className="truncate">{tokenTwo.ticker}</span>
               </div>
             </button>
+          </div>
+          <div className="btn btn-active" disabled={!tokenOneAmount}>
+            Swap
           </div>
         </div>
       </div>
